@@ -147,7 +147,7 @@ app.post('/login',(req,res)=>{
 
     res.cookie("userCookie", cookieValue, {
         httpOnly: true,
-        secure: true,
+        secure: false,
         sameSite: "strict",
         maxAge: 1000*60*60*24
     });
@@ -189,7 +189,7 @@ app.post('/register',(req,res)=>{
 
     if(checkUsernameResult){
         errors.push("Username is taken");
-        res.render('signup',{errors});
+        return res.render('signup',{errors});
     }
 
     //add new user details into database
@@ -207,7 +207,7 @@ app.post('/register',(req,res)=>{
 
     res.cookie("userCookie", cookieValue, {
         httpOnly: true,
-        secure: true,
+        secure: false,
         sameSite: "strict",
         maxAge: 1000*60*60*24
     });

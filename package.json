@@ -2,9 +2,9 @@
   "name": "blog",
   "version": "1.0.0",
   "description": "BLOG",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "dev": "nodemon server"
+    "dev": "nodemon server.js"
   },
   "author": "OMP",
   "license": "ISC",
