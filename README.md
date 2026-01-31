@@ -1,5 +1,4 @@
 # Blog Platform
-
 A minimal blog web application built with **Express.js**, **EJS templates**, **JWT auth**, and **SQLite**.  
 Users can register, log in, and perform full CRUD operations (Create, Read, Update, Delete) on blog posts.
 
